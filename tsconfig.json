@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "lib": ["ES2020", "DOM"],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "baseUrl": ".",
+        "paths": {
+            "@pages": ["src/pages"],
+            "@fixtures": ["src/fixtures/BaseFixtures"],
+            "@fixtures/*": ["src/fixtures/BaseFixtures/*"],
+            "@/types/*": ["src/types/*"],
+            "@/utils/*": ["src/utils/*"],
+            "@/data/*": ["src/data/*"]
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "test-results", "playwright-report"]
+}
